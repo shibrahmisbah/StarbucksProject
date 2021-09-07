@@ -1,0 +1,86 @@
+/* 
+    Created on : April 2, 2021, 10:36:57 p.m.
+    Author     : Shibrah Misbah
+*/
+
+body { 
+                font-family: sans-serif; 
+                color:white;
+                background-color: black;}
+		header{text-align:center;}
+		#form1 {font-size: 1em; margin: 1em;}	
+		input:valid{color:green;}
+		input:invalid{color:red;}
+		input[type="number"]:focus{background-color:white;}
+		input:required{background-color:white; border-color:gold;}
+		textarea:required{background-color:rgb(238, 167, 167)}
+		#output{color:white; background-color:black;
+     }
+
+form { 
+        display: grid; 
+	grid-gap:0px;
+	grid-template-columns:1fr 1fr;
+        padding: 3em 3em; 
+        width: 100%; 
+        grid-template-areas: ' hdr hdr '
+                              'f1 f2'
+                              'f3  f4'
+
+     }
+
+header { 
+        grid-area: hdr;
+       }
+    .f1 { 
+        grid-area: f1;
+	}
+    .f2 { 
+        grid-area: f2; 
+        }
+    .f3 { 
+        grid-area: f3; 
+        }    
+    .f4 { 
+        grid-area: f4; 
+        }     
+
+     .f1, .f2, .f3, .f4 {background-color:forestgreen;}
+
+     
+
+main { 
+        display: grid; 
+        border: solid 50px forestgreen;
+	grid-gap:0px;
+	grid-template-columns:1fr 2fr;
+        padding: 1em 1em; 
+        width: 100%; 
+        grid-template-areas:  'hdr hdr'
+                              'b1  b2';
+     }
+
+    .orderhdr { 
+        grid-area: hdr;
+        color:white;
+	}
+        
+    .b1 { 
+        grid-area: b1;
+        text-align:center;
+        }
+        
+    .b2 { 
+        grid-area: b2; 
+        text-align:center;
+        }   
+        
+    .b1, .b2 {background-color:white;}
+
+    .size {
+        text-align:center;
+    }
+    
+ 
+     
+     
